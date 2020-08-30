@@ -57,3 +57,12 @@ The first question I need to answer is: "How many people survived? Who are the t
 There are more dead than survivors. I'll investigate on dead people data to understand why they are dead
 
 The first assumption that I'll take a very sad assumption: poor people are more likely to die. Let's check it out using passenger class
+
+More than half of passengers were 3rd class passengers
+
+    > passengers % distribution by class
+    3    55.0
+    1    24.0
+    2    21.0
+
+As shown in figure docs/outcome_vs_class.png, 3rd class passenger had far way less probability to save their lives
