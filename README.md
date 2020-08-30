@@ -55,3 +55,5 @@ The first question I need to answer is: "How many people survived? Who are the t
     Survived= 38.0% , Dead=62.0% (sum is 100.0) Out of 891 examples
 
 There are more dead than survivors. I'll investigate on dead people data to understand why they are dead
+
+The first assumption that I'll take a very sad assumption: poor people are more likely to die. Let's check it out using passenger class
