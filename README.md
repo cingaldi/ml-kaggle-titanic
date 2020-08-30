@@ -12,12 +12,17 @@ Given a *train.csv* file, fit a model that maximizes prediction accuracy over a 
 ### Phase 1: Data Loading & Feature Engineering
 In the first phase, we concentrate on analyze the dataset to understand when provided data is good enough to be processed. The very first step after loading csv is to look at missing values
 
-	    > Train Dataset - Counting missing values over 891 examples
-	Pclass      0
-	Age       177
-	SibSp       0
-	Parch       0
-	Fare        0
+	> Train Dataset - Counting missing values over 891 examples
+    Pclass        0
+    Name          0
+    Sex           0
+    Age         177
+    SibSp         0
+    Parch         0
+    Ticket        0
+    Fare          0
+    Cabin       687
+    Embarked      2
 	dtype: int64
 	> Ground Truth - Are there missing values?
 	no
@@ -36,5 +41,5 @@ In the first phase, we concentrate on analyze the dataset to understand when pro
 
 Turns out that:
 * A significant amount of examples in the training set has missing values. We don't want to get rid of these rows
-* Test dataset has few values of "Cabin" variable. This is a good point to decide if this feature is important
+* Both Train and Test dataset have few values of "Cabin" variable. This is a good point to decide to remove this feature
 * We have an outcome for each example. This makes me very happy :blush:
