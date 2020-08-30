@@ -9,7 +9,6 @@ df_test = pd.read_csv("data/dataset/test.csv")
 X = df_train[['Pclass', 'Name', 'Sex', 'SibSp', 'Parch', 'Ticket', 'Fare', 'Embarked']]
 Y = df_train["Survived"]
 
-
 print("> Train Dataset - Counting missing values over {} examples".format(len(X)))
 print(X.isnull().sum())
 
