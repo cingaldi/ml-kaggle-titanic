@@ -3,7 +3,8 @@ import pandas as pd
 df_train = pd.read_csv("data/dataset/train.csv")
 df_test = pd.read_csv("data/dataset/test.csv")
 
-X = df_train[['Pclass', 'Name', 'Sex', 'Age', 'SibSp', 'Parch', 'Ticket', 'Fare', 'Cabin', 'Embarked']]
+#Feature "Cabin" removed due to few non-missing values
+X = df_train[['Pclass', 'Name', 'Sex', 'Age', 'SibSp', 'Parch', 'Ticket', 'Fare', 'Embarked']]
 Y = df_train["Survived"]
 
 
