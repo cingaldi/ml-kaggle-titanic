@@ -65,4 +65,6 @@ More than half of passengers were 3rd class passengers
     1    24.0
     2    21.0
 
-As shown in figure docs/outcome_vs_class.png, 3rd class passenger had far way less probability to save their lives
+As shown in figure, 3rd class passenger had far way less probability to save their lives
+
+![docs/outcome_vs_class.png](https://github.com/cingaldi/ml-kaggle-titanic/blob/master/docs/outcome_vs_class.png)
