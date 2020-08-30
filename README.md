@@ -43,3 +43,6 @@ Turns out that:
 * A significant amount of examples in the training set has missing values. We don't want to get rid of these rows
 * Both Train and Test dataset have few values of "Cabin" variable. This is a good point to decide to remove this feature
 * We have an outcome for each example. This makes me very happy :blush:
+* In training dataset, ~10% of samples have missing "Age" value. Furthermore, looking at distribution (see docs/Figure_1.png) and sample dispersion, turns out that it's not appropriate to replace so many values with mean/median
+
+In this step, I won't pick Age as feature, but I'll come back on it later and here is why: When a ship sinks, I suppose that everyone will put a big effort to save children. Old people have less probability to survive. Thus, if I'm right, age will carry significant knowledge
