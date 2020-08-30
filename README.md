@@ -46,3 +46,12 @@ Turns out that:
 * In training dataset, ~10% of samples have missing "Age" value. Furthermore, looking at distribution (see docs/Figure_1.png) and sample dispersion, turns out that it's not appropriate to replace so many values with mean/median
 
 In this step, I won't pick Age as feature, but I'll come back on it later and here is why: When a ship sinks, I suppose that everyone will put a big effort to save children. Old people have less probability to survive. Thus, if I'm right, age will carry significant knowledge
+
+### Phase 2: Exploratory Analysis
+
+The first question I need to answer is: "How many people survived? Who are the the survivors/dead?"
+
+    > Survivors and Dead count
+    Survived= 38.0% , Dead=62.0% (sum is 100.0) Out of 891 examples
+
+There are more dead than survivors. I'll investigate on dead people data to understand why they are dead
